@@ -14,6 +14,7 @@ LABEL "org.opencontainers.image.url"="https://www.github.com/io7m/mediamtx-oci"
 LABEL "org.opencontainers.image.version"="$version"
 
 RUN apk update
+RUN apk add curl
 
 COPY tmp/mediamtx mediamtx
 
